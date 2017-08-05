@@ -19,6 +19,9 @@ set shiftwidth=2
 " On pressing tab, insert 2 spaces
 set expandtab
 
+// :find finds recursivly
+set path+=**
+
 set wildmenu
 
 " rebind <Esc> to ^
