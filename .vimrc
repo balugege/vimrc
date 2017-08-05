@@ -1,3 +1,11 @@
+set nocompatible " be iMproved, required
+filetype off " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'wakatime/vim-wakatime'
+call vundle#end()
+filetype plugin indent on
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 Plug 'elixir-lang/vim-elixir'
@@ -11,6 +19,10 @@ set shiftwidth=2
 " On pressing tab, insert 2 spaces
 set expandtab
 
+set wildmenu
+
 " rebind <Esc> to ^
 " :imap 1 <Esc>
 
+" Set the delay after hitting <Esc> to 0
+set timeoutlen=1000 ttimeoutlen=0
