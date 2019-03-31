@@ -29,3 +29,6 @@ set wildmenu
 
 " Set the delay after hitting <Esc> to 0
 set timeoutlen=1000 ttimeoutlen=0
+
+" Escape with jj
+:imap jj <Esc>
